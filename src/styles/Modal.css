@@ -1,0 +1,43 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  animation: fade-in 0.35s;
+}
+
+.modal-content {
+  background-color: #f8f3f8;
+  color: #181010;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: fade-in 0.35s, scale-up 0.35s;
+  border-image: url(https://m.media-amazon.com/images/I/81fgDr9JR0L._AC_UF894,1000_QL80_.jpg)
+    42 round;
+  border-width: 20px;
+  border-style: solid;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-up {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
+}
