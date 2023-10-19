@@ -4,6 +4,7 @@ main {
   align-items: center;
   position: relative;
   flex-grow: 1;
+  color: antiquewhite;
 }
 
 .cards {
